@@ -22,7 +22,7 @@ void	usa_menu(void)
 		new_spoiled_entry(spoiler, "Seeder", seed_usa);
 		new_spoiled_entry(spoiler, "Search and Replace", search_usa);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_usa);
-		new_spoiled_entry(spoiler, "Remove All Weeds", weeder_usa);
+		new_spoiled_entry(spoiler, "Destroy All Weeds", weeder_usa);
 		new_spoiled_entry(spoiler, "Water All Flowers", quench_usa);
 		new_spoiled_entry(spoiler, "Grass", grass_usa);
 		new_spoiled_entry(spoiler, "Desert", desert_usa);
@@ -52,7 +52,7 @@ void	eur_menu(void)
 		new_spoiled_entry(spoiler, "Seeder", seed_eur);
 		new_spoiled_entry(spoiler, "Search and Replace", search_eur);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_eur);
-		new_spoiled_entry(spoiler, "Remove All Weeds", weeder_eur);
+		new_spoiled_entry(spoiler, "Destroy All Weeds", weeder_eur);
 		new_spoiled_entry(spoiler, "Water All Flowers", quench_eur);
 		new_spoiled_entry(spoiler, "Grass", grass_eur);
 		new_spoiled_entry(spoiler, "Desert", desert_eur);
