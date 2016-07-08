@@ -132,9 +132,9 @@ void    text2item_usa(void)
 
 void    moonjump_usa(void)
 {
-	u32		key = getKey();
-	static int		loc = 0;
-	if (is_pressed(BUTTON_L))
+	u32            key = getKey();
+	static int           loc = 0;
+	if (key == BUTTON_L)
 	{
 		loc = READU32(0x17321644);
 		if (loc == -1)
