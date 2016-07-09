@@ -3,6 +3,7 @@
 [**Ryan's Source**](https://github.com/RyDog199/ACNL-NTR-Cheats)  
 [**Nanquitas's Source**](https://github.com/Nanquitas/ACNL-NTR-Cheats)  
 [**Edit Layout**](https://github.com/SirBeethoven/ACNL-NTR-Cheats/wiki/Edit-Layout) 
+# [Latest Release](https://github.com/SirBeethoven/ACNL-NTR-Cheats/blob/master/ACNL_MULTI.plg?raw=true)
 # Build  
 1. Install devkitpro from [here](https://sourceforge.net/projects/devkitpro/)    
 2. Download [source archive](https://github.com/SirBeethoven/ACNL-NTR-Cheats/archive/master.zip)  
