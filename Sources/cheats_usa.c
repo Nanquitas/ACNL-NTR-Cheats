@@ -15,13 +15,13 @@ void    coord_usa(void)
 	if (loc == -1) //FFFFFFFF=outdoors
 	{
 		if (is_pressed(BUTTON_A + BUTTON_DD))
-			add_to_address((void *)0x17321518, 0x00002800);
+			add_to_address((void *)0x17321518, 0x00001800);
 		if (is_pressed(BUTTON_A + BUTTON_DU))
-			sub_to_address((void *)0x17321518, 0x00002800);
+			sub_to_address((void *)0x17321518, 0x00001800);
 		if (is_pressed(BUTTON_A + BUTTON_DL))
-			sub_to_address((void *)0x17321510, 0x00002000);
+			sub_to_address((void *)0x17321510, 0x00001000);
 		if (is_pressed(BUTTON_A + BUTTON_DR))
-			add_to_address((void *)0x17321510, 0x00002000);
+			add_to_address((void *)0x17321510, 0x00001000);
 	}
 	else //if it's anything but FFFFFFFF then you're indoors
 	{
@@ -132,9 +132,9 @@ void    text2item_usa(void)
 
 void    moonjump_usa(void)
 {
-	u32            key = getKey();
-	static int           loc = 0;
-	if (key == BUTTON_L)
+    static int    loc = 0;
+
+    if (is_pressed(BUTTON_L) && !(is_pressed(R)))
 	{
 		loc = READU32(0x17321644);
 		if (loc == -1)
@@ -471,11 +471,8 @@ void	tan_usa(void)
 {
 	WRITEU8(0x15FB7F28, 0xF);
 }
-<<<<<<< HEAD
-=======
 
 void seeder(void)
 {
 	WRITEU16(0x15FBEAD0, 0x0026);
 }
->>>>>>> refs/remotes/RyDog199/master

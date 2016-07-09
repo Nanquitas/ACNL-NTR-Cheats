@@ -9,7 +9,7 @@ void	usa_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.1.1");
+	new_unselectable_entry("ACNL Cheats 2.1.1");//USA
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_usa);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_usa);
@@ -40,7 +40,7 @@ void	eur_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.1.1");
+	new_unselectable_entry("ACNL Cheats 2.1.1");//EUR
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_eur);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_eur);
@@ -70,15 +70,7 @@ void	jap_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("JAP WIP Build 3");
-	spoiler = new_spoiler("Enviroment Codes");
-		new_spoiled_entry(spoiler, "WIP", quench_jap);
-		new_spoiled_entry(spoiler, "WIP", seed_jap);
-		new_spoiled_entry(spoiler, "Search and Replace", search_jap);
-		new_spoiled_entry(spoiler, "WIP", grass_jap);
-		new_spoiled_entry(spoiler, "WIP", desert_jap);
-		new_spoiled_entry(spoiler, "WIP", weeder_jap);
-		new_spoiled_entry(spoiler, "WIP", tree_jap);
+	new_unselectable_entry("ACNL Cheats WIP B3");//JAP
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_jap);
 		new_spoiled_entry(spoiler, "WIP", duplicate_jap);
@@ -87,6 +79,14 @@ void	jap_menu(void)
 		new_spoiled_entry(spoiler, "WIP", teleport_jap);
 		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_jap);
 		new_spoiled_entry(spoiler, "WIP", speed_jap);
+	spoiler = new_spoiler("Enviroment Codes");
+		new_spoiled_entry(spoiler, "WIP", quench_jap);
+		new_spoiled_entry(spoiler, "WIP", seed_jap);
+		new_spoiled_entry(spoiler, "Search and Replace", search_jap);
+		new_spoiled_entry(spoiler, "WIP", grass_jap);
+		new_spoiled_entry(spoiler, "WIP", desert_jap);
+		new_spoiled_entry(spoiler, "WIP", weeder_jap);
+		new_spoiled_entry(spoiler, "WIP", tree_jap);
 	spoiler = new_spoiler("Nookling Upgrades");
 		new_spoiled_entry(spoiler, "WIP", nook1_jap);
 		new_spoiled_entry(spoiler, "WIP", nook2_jap);
