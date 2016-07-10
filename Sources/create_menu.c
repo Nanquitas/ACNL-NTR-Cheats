@@ -9,7 +9,7 @@ void	usa_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.1.1");//USA
+	new_unselectable_entry("ACNL Cheats 2.2 B4");//USA
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_usa);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_usa);
@@ -33,7 +33,6 @@ void	usa_menu(void)
 		new_spoiled_entry(spoiler, "T&T Emporium", nook4_usa);//index 23
 	spoiler = new_spoiler("Appearance Codes");
 		new_spoiled_entry(spoiler, "Player 1 Max Tan", tan_usa);
-		new_spoiled_entry(spoiler, "Secret", seeder);
 }
 
 void	eur_menu(void)
