@@ -18,7 +18,7 @@ void	usa_menu(void)
 		new_spoiled_entry(spoiler, "Teleport", teleport_usa);
 		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_usa);
 		new_spoiled_entry(spoiler, "Speed Hack", speed_usa);
-	spoiler = new_spoiler("Enviroment Codes");
+	spoiler = new_spoiler("Environment Codes");
 		new_spoiled_entry(spoiler, "Seeder", seed_usa);
 		new_spoiled_entry(spoiler, "Search and Replace", search_usa);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_usa);
@@ -48,7 +48,7 @@ void	eur_menu(void)
 		new_spoiled_entry(spoiler, "Teleport", teleport_eur);
 		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_eur);
 		new_spoiled_entry(spoiler, "Speed Hack", speed_eur);
-	spoiler = new_spoiler("Enviroment Codes");
+	spoiler = new_spoiler("Environment Codes");
 		new_spoiled_entry(spoiler, "Seeder", seed_eur);
 		new_spoiled_entry(spoiler, "Search and Replace", search_eur);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_eur);
@@ -78,7 +78,7 @@ void	jap_menu(void)
 		new_spoiled_entry(spoiler, "Teleport", teleport_jap);
 		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_jap);
 		new_spoiled_entry(spoiler, "Speed Hack", speed_jap);
-	spoiler = new_spoiler("Enviroment Codes");
+	spoiler = new_spoiler("Environment Codes");
 		new_spoiled_entry(spoiler, "Seeder", seed_jap);
 		new_spoiled_entry(spoiler, "Search and Replace", search_jap);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_jap);
