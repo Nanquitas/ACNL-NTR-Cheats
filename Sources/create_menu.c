@@ -9,7 +9,7 @@ void	usa_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.2 B5");//USA
+	new_unselectable_entry("ACNL Cheats 2.2");//USA
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_usa);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_usa);
@@ -39,7 +39,7 @@ void	eur_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.1.1");//EUR
+	new_unselectable_entry("ACNL Cheats 2.2");//EUR
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_eur);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_eur);
@@ -48,7 +48,7 @@ void	eur_menu(void)
 		new_spoiled_entry(spoiler, "Teleport", teleport_eur);
 		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_eur);
 		new_spoiled_entry(spoiler, "Speed Hack", speed_eur);
-	spoiler = new_spoiler("Environment Codes");
+	spoiler = new_spoiler("Enviroment Codes");
 		new_spoiled_entry(spoiler, "Seeder", seed_eur);
 		new_spoiled_entry(spoiler, "Search and Replace", search_eur);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_eur);
@@ -69,7 +69,7 @@ void	jap_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.2 B5");//JAP
+	new_unselectable_entry("ACNL Cheats 2.2");//JAP
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_jap);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_jap);

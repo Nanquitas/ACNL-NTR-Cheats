@@ -135,9 +135,9 @@ void    text2item_eur(void)
 
 void    moonjump_eur(void)
 {
-	static int	loc = 0;
+	static int           loc = 0;
 	
-	if (is_pressed(BUTTON_L) && !(is_pressed(R)))
+if (is_pressed(BUTTON_L) && !(is_pressed(R)))
 	{
 		loc = READU32(0x17321C44);
 		if (loc == -1)
@@ -408,10 +408,20 @@ void	duplicate_eur(void)
 {
 	u32			key = getKey();
 	u32			dupe = 0;
+	u32			dupe0 = 0;
+	u32			dupe1 = 0;
+	u32			dupe2 = 0;
+	
 	if (key == BUTTON_R)
 	{
 		dupe = READU32(0x15FBEDD0);
+		dupe0 = READU32(0xAF8B28); //online pointer0
+		dupe1 = READU32(0xB02A38); //online pointer1
+		dupe2 = READU32(0xB0C948); //online pointer2
 		WRITEU32(0x15FBEDD4, dupe);
+		WRITEU32(0xAF8B2C, dupe0);
+		WRITEU32(0xB02A3C, dupe1);
+		WRITEU32(0xB0C94C, dupe2);	
 	}
 }
 
