@@ -9,7 +9,7 @@ void	usa_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats 2.2 B4");//USA
+	new_unselectable_entry("ACNL Cheats 2.2 B5");//USA
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_usa);
 		new_spoiled_entry(spoiler, "Duplication", duplicate_usa);
@@ -22,7 +22,7 @@ void	usa_menu(void)
 		new_spoiled_entry(spoiler, "Seeder", seed_usa);
 		new_spoiled_entry(spoiler, "Search and Replace", search_usa);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_usa);
-		new_spoiled_entry(spoiler, "Destroy All Weeds", weeder_usa);
+		new_spoiled_entry(spoiler, "Remove All Weeds", weeder_usa);
 		new_spoiled_entry(spoiler, "Water All Flowers", quench_usa);
 		new_spoiled_entry(spoiler, "Grass", grass_usa);
 		new_spoiled_entry(spoiler, "Desert", desert_usa);
@@ -52,7 +52,7 @@ void	eur_menu(void)
 		new_spoiled_entry(spoiler, "Seeder", seed_eur);
 		new_spoiled_entry(spoiler, "Search and Replace", search_eur);
 		new_spoiled_entry(spoiler, "Instant Tree", tree_eur);
-		new_spoiled_entry(spoiler, "Destroy All Weeds", weeder_eur);
+		new_spoiled_entry(spoiler, "Remove All Weeds", weeder_eur);
 		new_spoiled_entry(spoiler, "Water All Flowers", quench_eur);
 		new_spoiled_entry(spoiler, "Grass", grass_eur);
 		new_spoiled_entry(spoiler, "Desert", desert_eur);
@@ -69,30 +69,30 @@ void	jap_menu(void)
 {
 	t_spoil spoiler;
 
-	new_unselectable_entry("ACNL Cheats WIP B3");//JAP
+	new_unselectable_entry("ACNL Cheats 2.2 B5");//JAP
 	spoiler = new_spoiler("Inventory Codes");
 		new_spoiled_entry(spoiler, "Text to Item", text2item_jap);
-		new_spoiled_entry(spoiler, "WIP", duplicate_jap);
+		new_spoiled_entry(spoiler, "Duplication", duplicate_jap);
 	spoiler = new_spoiler("Movement Codes");
 		new_spoiled_entry(spoiler, "Moon Jump", moonjump_jap);
-		new_spoiled_entry(spoiler, "WIP", teleport_jap);
+		new_spoiled_entry(spoiler, "Teleport", teleport_jap);
 		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_jap);
-		new_spoiled_entry(spoiler, "WIP", speed_jap);
+		new_spoiled_entry(spoiler, "Speed Hack", speed_jap);
 	spoiler = new_spoiler("Enviroment Codes");
-		new_spoiled_entry(spoiler, "WIP", quench_jap);
-		new_spoiled_entry(spoiler, "WIP", seed_jap);
+		new_spoiled_entry(spoiler, "Seeder", seed_jap);
 		new_spoiled_entry(spoiler, "Search and Replace", search_jap);
-		new_spoiled_entry(spoiler, "WIP", grass_jap);
-		new_spoiled_entry(spoiler, "WIP", desert_jap);
-		new_spoiled_entry(spoiler, "WIP", weeder_jap);
-		new_spoiled_entry(spoiler, "WIP", tree_jap);
+		new_spoiled_entry(spoiler, "Instant Tree", tree_jap);
+		new_spoiled_entry(spoiler, "Remove All Weeds", weeder_jap);
+		new_spoiled_entry(spoiler, "Water All Flowers", quench_jap);
+		new_spoiled_entry(spoiler, "Grass", grass_jap);
+		new_spoiled_entry(spoiler, "Desert", desert_jap);
 	spoiler = new_spoiler("Nookling Upgrades");
-		new_spoiled_entry(spoiler, "WIP", nook1_jap);
-		new_spoiled_entry(spoiler, "WIP", nook2_jap);
-		new_spoiled_entry(spoiler, "WIP", nook3_jap);
-		new_spoiled_entry(spoiler, "WIP", nook4_jap);//index 23
+		new_spoiled_entry(spoiler, "T&T Mart", nook1_jap);
+		new_spoiled_entry(spoiler, "Super T&T", nook2_jap);
+		new_spoiled_entry(spoiler, "T.I.Y", nook3_jap);
+		new_spoiled_entry(spoiler, "T&T Emporium", nook4_jap);//index 23
 	spoiler = new_spoiler("Appearance Codes");
-		new_spoiled_entry(spoiler, "WIP", tan_jap);
+		new_spoiled_entry(spoiler, "Player 1 Max Tan", tan_jap);
 }
 
 /*

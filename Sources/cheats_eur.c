@@ -135,9 +135,9 @@ void    text2item_eur(void)
 
 void    moonjump_eur(void)
 {
-	u32            key = getKey();
-	static int           loc = 0;
-	if (key == BUTTON_L)
+	static int	loc = 0;
+	
+	if (is_pressed(BUTTON_L) && !(is_pressed(R)))
 	{
 		loc = READU32(0x17321C44);
 		if (loc == -1)

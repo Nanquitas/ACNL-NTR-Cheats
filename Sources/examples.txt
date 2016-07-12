@@ -1,0 +1,68 @@
+Coordinate Modifier
+
+void    coord_usa(void)
+{
+	static int	loc = 0;
+
+	if (is_pressed(BUTTON_A))
+	{
+		loc = READU32(0x17321644);
+	}
+	if (loc == -1) //FFFFFFFF=outdoors
+	{
+		if (is_pressed(BUTTON_A + BUTTON_DD))
+			add_to_address((void *)0x17321518, 0x00002800);
+		if (is_pressed(BUTTON_A + BUTTON_DU))
+			sub_to_address((void *)0x17321518, 0x00002800);
+		if (is_pressed(BUTTON_A + BUTTON_DL))
+			sub_to_address((void *)0x17321510, 0x00002000);
+		if (is_pressed(BUTTON_A + BUTTON_DR))
+			add_to_address((void *)0x17321510, 0x00002000);
+	}
+	else //if it's anything but FFFFFFFF then you're indoors
+	{
+		if (is_pressed(BUTTON_A + BUTTON_DD))
+			add_to_address((void *)0x17321644, 0x00008000);
+		if (is_pressed(BUTTON_A + BUTTON_DU))
+			sub_to_address((void *)0x17321644, 0x00008000);
+		if (is_pressed(BUTTON_A + BUTTON_DL))
+			sub_to_address((void *)0x1732163c, 0x00008000);
+		if (is_pressed(BUTTON_A + BUTTON_DR))
+			add_to_address((void *)0x1732163c, 0x00008000);
+	}
+}
+
+Pictures with Moon Jump
+
+void    moonjump_usa(void)
+{
+	static int	loc = 0;
+	
+	if (is_pressed(BUTTON_L) && !(is_pressed(R)))
+
+Menu
+
+new_unselectable_entry("ACNL Cheats 2.2 B5");//USA
+	spoiler = new_spoiler("Inventory Codes");
+		new_spoiled_entry(spoiler, "Text to Item", text2item_usa);
+		new_spoiled_entry(spoiler, "Duplication", duplicate_usa);
+	spoiler = new_spoiler("Movement Codes");
+		new_spoiled_entry(spoiler, "Moon Jump", moonjump_usa);
+		new_spoiled_entry(spoiler, "Teleport", teleport_usa);
+		new_spoiled_entry(spoiler, "Coordinates Modifier", coord_usa);
+		new_spoiled_entry(spoiler, "Speed Hack", speed_usa);
+	spoiler = new_spoiler("Enviroment Codes");
+		new_spoiled_entry(spoiler, "Seeder", seed_usa);
+		new_spoiled_entry(spoiler, "Search and Replace", search_usa);
+		new_spoiled_entry(spoiler, "Instant Tree", tree_usa);
+		new_spoiled_entry(spoiler, "Remove All Weeds", weeder_usa);
+		new_spoiled_entry(spoiler, "Water All Flowers", quench_usa);
+		new_spoiled_entry(spoiler, "Grass", grass_usa);
+		new_spoiled_entry(spoiler, "Desert", desert_usa);
+	spoiler = new_spoiler("Nookling Upgrades");
+		new_spoiled_entry(spoiler, "T&T Mart", nook1_usa);
+		new_spoiled_entry(spoiler, "Super T&T", nook2_usa);
+		new_spoiled_entry(spoiler, "T.I.Y", nook3_usa);
+		new_spoiled_entry(spoiler, "T&T Emporium", nook4_usa);//index 23
+	spoiler = new_spoiler("Appearance Codes");
+		new_spoiled_entry(spoiler, "Player 1 Max Tan", tan_usa);
