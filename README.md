@@ -4,6 +4,8 @@
 [**Nanquitas's Source**](https://github.com/Nanquitas/ACNL-NTR-Cheats)  
 [**Edit Layout**](https://github.com/SirBeethoven/ACNL-NTR-Cheats/wiki/Edit-Layout) 
 # [Latest Release](https://github.com/SirBeethoven/ACNL-NTR-Cheats/blob/master/ACNL_MULTI.plg?raw=true)
+# Difference between Regular
+This source fixes just some small mistakes, taking pictures with moon jump enabled "by holding R and pressing L", Coordinate Modifier's speed is increased, and the menu is changed based on usage.
 # Build  
 1. Install devkitpro from [here](https://sourceforge.net/projects/devkitpro/)    
 2. Download [source archive](https://github.com/SirBeethoven/ACNL-NTR-Cheats/archive/master.zip)  
