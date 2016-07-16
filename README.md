@@ -2,7 +2,7 @@
 [**Forum**](https://gbatemp.net/threads/release-animal-crossing-new-leaf-multi-cheat-ntr-plugin.428522/)  
 [**Ryan's Source**](https://github.com/RyDog199/ACNL-NTR-Cheats)  
 [**Nanquitas's Source**](https://github.com/Nanquitas/ACNL-NTR-Cheats)  
-[**Edit Layout**](https://github.com/SirBeethoven/ACNL-NTR-Cheats/wiki/Edit-Layout) 
+[**Customize!**](https://github.com/SirBeethoven/ACNL-NTR-Cheats/wiki/) 
 # [Latest Release](https://github.com/SirBeethoven/ACNL-NTR-Cheats/blob/master/ACNL_MULTI.plg?raw=true)
 # Differences From Regular
 This source fixes some small mistakes and coding errors, enables taking pictures with moon jump enabled "by holding R and pressing L", increases Coordinate Modifier's speed, and the menu is changed based on usage.
