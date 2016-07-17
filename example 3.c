@@ -1,5 +1,12 @@
 //Examples
 
+//Fixed Coordinate Modifier
+
+0x00001800
+
+
+
+
 
 //Fixed Moon Jump
 
