@@ -114,8 +114,7 @@ void    text2item_eur(void)
 void    moonjump_eur(void)
 {
 	int		loc;
-	
-	if (is_pressed(BUTTON_L))
+	if (!(any_is_pressed(R + B)) && is_pressed(BUTTON_L)) //it's better to test the negation first
 	{
 		loc = READU32(0x17321C44);
 		if (loc == -1)
@@ -414,7 +413,7 @@ void	duplicate_eur(void)
 	u32			dupe2 = 0;
 	u32			dupe3 = 0;
 	
-	if (is_pressed(BUTTON_R))
+	if (!(any_is_pressed(L + B)) && is_pressed(BUTTON_R))
 	{
 		dupe = READU32(0x15FBEDD0);
 		dupe0 = READU32(0xAF8B28); //online pointer0
