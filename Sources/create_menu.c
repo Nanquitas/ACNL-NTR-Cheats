@@ -48,28 +48,32 @@ void	eur_menu(void)
 {
 	u32 index;
 
-	new_unselectable_entry("ACNL Cheats 2.2");//EUR
+	index = new_unselectable_entry("ACNL Cheats 2.3");//EUR
 	set_note("Open menu at title screen or indoors.", index);
 	new_spoiler("Inventory Codes");
 		new_entry("Text to Item", text2item_eur);
 		new_entry("Duplication", duplicate_eur);
 	exit_spoiler();
-	new_spoiler("Movement Codes");
+	index = new_spoiler("Movement Codes");
+	set_note("Do not execute during big transistions!", index);
 		new_entry("Moon Jump", moonjump_eur);
 		new_entry("Teleport", teleport_eur);
 		new_entry("Coordinates Modifier", coord_eur);
 		new_entry("Speed Hack", speed_eur);
-		set_note("Do not execute during big transistions!", index);
+		new_entry("Warping", warping_eur);
 	exit_spoiler();
 	index = new_spoiler("Environment Codes");
 		new_entry("Seeder", seed_eur);
 		new_entry("Search and Replace", search_eur);
 		new_entry("Instant Tree", tree_eur);
-		set_note("Enable one R+A cheat at a time.\n\nExecute one,\n\nthen go in and out of a house.", index);
-		new_entry("Destroy All Weeds", weeder_eur);
-		new_entry("Water All Flowers", quench_eur);
-		new_entry("Grass", grass_eur);
-		new_entry("Desert", desert_eur);
+		index = new_entry("Destroy All Weeds", weeder_eur);//R+A Cheats
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
+        index = new_entry("Water All Flowers", quench_eur);
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
+        index = new_entry("Grass", grass_eur);
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
+        index = new_entry("Desert", desert_eur);
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
 	exit_spoiler();
 	new_spoiler("Nookling Upgrades");
 		new_radio_entry("T&T Mart", nook1_eur);
@@ -86,28 +90,32 @@ void	jap_menu(void)
 {
 	u32 index;
 	
-	new_unselectable_entry("ACNL Cheats 2.2");//JAP
+	index = new_unselectable_entry("ACNL Cheats 2.3");//JAP
 	set_note("Open menu at title screen or indoors.", index);
 	new_spoiler("Inventory Codes");
 		new_entry("Text to Item", text2item_jap);
 		new_entry("Duplication", duplicate_jap);
 	exit_spoiler();
-	new_spoiler("Movement Codes");
+	index = new_spoiler("Movement Codes");
+	set_note("Do not execute during big transistions!", index);
 		new_entry("Moon Jump", moonjump_jap);
 		new_entry("Teleport", teleport_jap);
 		new_entry("Coordinates Modifier", coord_jap);
 		new_entry("Speed Hack", speed_jap);
-		set_note("Do not execute during big transistions!", index);
+		new_entry("Warping", warping_jap);
 	exit_spoiler();
 	new_spoiler("Environment Codes");
 		new_entry("Seeder", seed_jap);
 		new_entry("Search and Replace", search_jap);
 		new_entry("Instant Tree", tree_jap);
-		set_note("Enable one R+A cheat at a time.\n\nExecute one,\n\nthen go in and out of a house.", index);
-		new_entry("Destroy All Weeds", weeder_jap);
-		new_entry("Water All Flowers", quench_jap);
-		new_entry("Grass", grass_jap);
-		new_entry("Desert", desert_jap);
+		index = new_entry("Destroy All Weeds", weeder_jap);//R+A Cheats
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
+        index = new_entry("Water All Flowers", quench_jap);
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
+        index = new_entry("Grass", grass_jap);
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
+        index = new_entry("Desert", desert_jap);
+		set_note("Enable one R+A cheat at a time.\n\nExecute one.\n\nThen go in and out of a house.", index);
 	exit_spoiler();
 	new_spoiler("Nookling Upgrades");
 		new_radio_entry("T&T Mart", nook1_jap);
