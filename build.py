@@ -37,12 +37,12 @@ LIBPATH 	= '-L ./lib '
 ARCH 		= ' -march=armv6k -mlittle-endian -mtune=mpcore -mfloat-abi=hard '
 CFLAGS		= ' -Os -c ' + ARCH
 ASFLAGS		= ' -Os -c -s ' + ARCH
-LIBFLAGS 	= " -lg -lsysbase -lntr -lShark2NTR_dev -lctr -lc -lgcc "
+LIBFLAGS 	= " -lntr -lShark2NTR_dev -lctr -lg -lsysbase -lc -lgcc "
 LDFLAGS		= ' -pie --gc-sections -T 3ds.ld -Map=' + NAME +'.map '
 INCLUDES 	= " -I Includes -I Sources -I Includes/libntrplg "
 CFILES		= allFolderFile(".\\Sources\\", ".c")
 ASFILES		= allFolderFile(".\\Sources\\", ".s")
-OFILES      = allFolderFile(".\\ofiles\\", ".o") 
+OFILES          = allFolderFile(".\\ofiles\\", ".o") 
 ftp 		= FTP()
 FILE		= COPYTOPATH
 		
