@@ -11,10 +11,10 @@
 
 #define ABS(x) MAX(x, -x)
 
-u32		plgGetIoBase(u32 IoType);
+u32 		plgGetIoBase(u32 IoType);
 Handle		getCurrentProcessHandle(void);
-u32		getCurrentProcessId(void);
-void		onCheatItemChanged(int id);
+u32 		getCurrentProcessId(void);
+void 		onCheatItemChanged(int id);
 
 enum
 {
@@ -22,6 +22,15 @@ enum
 	NORMAL = 1,
 	FAST = 2
 };
+
+
+typedef enum
+{
+	INFO = BIT(0),
+	WARNING = BIT(1),
+	DEBUG = BIT(2),
+	ERROR = BIT(3)
+}				log_type;
 
 typedef union	u_ib
 {
@@ -144,5 +153,6 @@ void	set_note(const char *text, int index);
 */
 void    disableCheat(int index);
 
+void	new_log(int log_type, char *text, ...);
 
 #endif
