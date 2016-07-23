@@ -13,7 +13,7 @@ void	usa_menu(void)
         new_entry("Duplication", duplicate_usa);
     exit_spoiler();
     index = new_spoiler("Movement Codes");
-	set_note("Do not execute\n\During big transistions!", index);
+	set_note("Do not execute during big transistions!", index);
         new_entry("Moon Jump", moonjump_usa);
         new_entry("Teleport", teleport_usa);
         new_entry("Coordinates Modifier", coord_usa);
